@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import Coin from './components/Coin/Coin';
+import AccountBalance from './components/AccountBalance/AccountBalance';
 
 let sum = 0;
 for(let num of [1,2,3,4,5]) {
@@ -20,7 +21,7 @@ function App() {
         </h1>
         
       </header>
-
+      <AccountBalance amount = {10000} />
       <table className="coin-table">
           <thead>
             <tr>
@@ -32,6 +33,8 @@ function App() {
           <tbody> 
             <Coin name="BITCOIN" ticker="BTC" price = {9999.99}/>
             <Coin name="ETHERUM" ticker="ETH" price = {299.99}/>
+            <Coin name="TETHER" ticker="USDT" price = {1.00}/>
+            <Coin name="RIPPLE" ticker="XRP" price = {0.20}/>
           </tbody>
       </table>
     </div>
