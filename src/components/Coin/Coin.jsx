@@ -39,6 +39,9 @@ export default class Coin extends Component {
 
     handleClick(event){
         event.preventDefault();
+
+        this.props.handleRefresh(this.props.ticker);
+        /*
         const ramdomPercentage = 0.995 + Math.random() * 0.01;
 
             this.setState(
@@ -47,7 +50,7 @@ export default class Coin extends Component {
                         price: oldState.price * ramdomPercentage
                     };
                 }
-            );
+            );*/
     }
 
     render() {
@@ -55,7 +58,7 @@ export default class Coin extends Component {
             <tr className="coin-row">
                 <TDR>{this.props.name}</TDR>
                 <TDR>{this.props.ticker}</TDR>
-                <TDR>${this.state.price}</TDR>
+                <TDR>${this.props.price}</TDR>
                 <TDR>
                     <form>
                         <button onClick={this.handleClick}>Refresh</button>
