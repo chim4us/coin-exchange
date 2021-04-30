@@ -13,6 +13,7 @@ export default class AccountBalance extends Component {
         return (
             <Section >
                 Balance: $ {this.props.amount}
+                
             </Section>
         );
     }

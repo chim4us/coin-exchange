@@ -21,25 +21,25 @@ class App extends React.Component {
       balance: 10000,
       coinData: [
         {
-          key: uuidv4(),
+          //key: uuidv4(),
           name: 'BITCOIN',
           ticker: 'BTC',
           price: 9999.99
         },
         {
-          key: uuidv4(),
+          //key: uuidv4(),
           name: 'ETHERUM',
           ticker: 'ETH',
           price: 299.99
         },
         {
-          key: uuidv4(),
+          //key: uuidv4(),
           name: 'TETHER',
           ticker: 'USDT',
           price: 1.00
         },
         {
-          key: uuidv4(),
+          //key: uuidv4(),
           name: 'RIPPLE',
           ticker: 'XRP',
           price: 0.20
@@ -55,7 +55,7 @@ class App extends React.Component {
 
   handleRefresh (changevalueTicker) {
     
-    const newCoinData = this.state.coinData.map(function ({ticker,name,price,key}) {
+    const newCoinData = this.state.coinData.map(function ({ticker,name,price}) {
       let newPrice = price;
       if(changevalueTicker === ticker){
         const ramdomPercentage = 0.995 + Math.random() * 0.01;
@@ -63,7 +63,6 @@ class App extends React.Component {
       }
 
       return{
-        key,
         name,
         ticker,
         price: newPrice

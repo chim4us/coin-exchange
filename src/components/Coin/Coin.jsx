@@ -58,7 +58,7 @@ export default class Coin extends Component {
             <tr className="coin-row">
                 <TDR>{this.props.name}</TDR>
                 <TDR>{this.props.ticker}</TDR>
-                <TDR>${this.props.price}</TDR>
+                <TDR>${this.props.price}</TDR>s
                 <TDR>
                     <form>
                         <button onClick={this.handleClick}>Refresh</button>

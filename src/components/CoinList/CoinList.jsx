@@ -22,7 +22,7 @@ export default class  extends Component {
             <tbody> 
               {
                 this.props.coinData.map(value => 
-                <Coin key={value.key} handleRefresh = {this.props.handleRefresh} 
+                <Coin key={value.ticker} handleRefresh = {this.props.handleRefresh} 
                 name={value.name} ticker={value.ticker} price={value.price}/>)
               }
               
