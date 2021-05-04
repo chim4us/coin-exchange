@@ -20,7 +20,6 @@ export default class Coin extends Component {
     componentDidMount(){
         const callback = () => {
             const ramdomPercentage = 0.995 + Math.random() * 0.01;
-
             this.setState(
                 function(oldState){
                     return{
@@ -29,12 +28,9 @@ export default class Coin extends Component {
                 }
             );
         }
-
         
-
         setInterval(callback, 1000);
     }
-
     */
 
     handleClick(event){
@@ -43,7 +39,6 @@ export default class Coin extends Component {
         this.props.handleRefresh(this.props.ticker);
         /*
         const ramdomPercentage = 0.995 + Math.random() * 0.01;
-
             this.setState(
                 function(oldState){
                     return{
@@ -58,7 +53,8 @@ export default class Coin extends Component {
             <tr className="coin-row">
                 <TDR>{this.props.name}</TDR>
                 <TDR>{this.props.ticker}</TDR>
-                <TDR>${this.props.price}</TDR>s
+                <TDR>${this.props.price}</TDR>
+                {this.props.showBalance? <TDR>${this.props.balance}</TDR> : null}
                 <TDR>
                     <form>
                         <button onClick={this.handleClick}>Refresh</button>

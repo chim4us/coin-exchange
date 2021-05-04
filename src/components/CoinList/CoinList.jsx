@@ -17,13 +17,15 @@ export default class  extends Component {
                 <th>Name</th>
                 <th>Ticker</th>
                 <th>Price</th>
+                {this.props.showBalance? <th>Balance</th> : null}
+                <th>Action</th>
               </tr>
             </thead>
             <tbody> 
               {
                 this.props.coinData.map(value => 
                 <Coin key={value.ticker} handleRefresh = {this.props.handleRefresh} 
-                name={value.name} ticker={value.ticker} price={value.price}/>)
+                name={value.name} ticker={value.ticker} showBalance={this.props.showBalance} balance={value.balance} price={value.price}/>)
               }
               
             </tbody>
