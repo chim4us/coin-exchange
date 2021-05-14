@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chim4us/coin-exchange/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/chim4us/coin-exchange/static/js/main.24e91e89.chunk.js",
+    "main.js.map": "/chim4us/coin-exchange/static/js/main.24e91e89.chunk.js.map",
+    "runtime-main.js": "/chim4us/coin-exchange/static/js/runtime-main.6fc8e96d.js",
+    "runtime-main.js.map": "/chim4us/coin-exchange/static/js/runtime-main.6fc8e96d.js.map",
+    "static/js/2.909c758e.chunk.js": "/chim4us/coin-exchange/static/js/2.909c758e.chunk.js",
+    "static/js/2.909c758e.chunk.js.map": "/chim4us/coin-exchange/static/js/2.909c758e.chunk.js.map",
+    "static/js/3.6d26d636.chunk.js": "/chim4us/coin-exchange/static/js/3.6d26d636.chunk.js",
+    "static/js/3.6d26d636.chunk.js.map": "/chim4us/coin-exchange/static/js/3.6d26d636.chunk.js.map",
+    "index.html": "/chim4us/coin-exchange/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/chim4us/coin-exchange/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.909c758e.chunk.js.LICENSE.txt": "/chim4us/coin-exchange/static/js/2.909c758e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/chim4us/coin-exchange/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fc8e96d.js",
+    "static/js/2.909c758e.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.24e91e89.chunk.js"
+  ]
+}
